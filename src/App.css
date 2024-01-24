@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+h1::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
